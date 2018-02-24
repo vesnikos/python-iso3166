@@ -20,7 +20,8 @@ _records = [
     Country(u"Albania", "AL", "ALB", "008", u"Albania"),
     Country(u"Algeria", "DZ", "DZA", "012", u"Algeria"),
     Country(u"American Samoa", "AS", "ASM", "016", u"American Samoa"),
-    Country(u"Andorra", "AD", "AND", "020", u"Andorra"),
+    # Country(u"Andorra", "AD", "AND", "020", u"Andorra"),
+    Country(u"Andorra", "AD", "ANR", "020", u"Andorra"),
     Country(u"Angola", "AO", "AGO", "024", u"Angola"),
     Country(u"Anguilla", "AI", "AIA", "660", u"Anguilla"),
     Country(u"Antarctica", "AQ", "ATA", "010", u"Antarctica"),
@@ -111,7 +112,8 @@ _records = [
     Country(u"Germany", "DE", "DEU", "276", u"Germany"),
     Country(u"Ghana", "GH", "GHA", "288", u"Ghana"),
     Country(u"Gibraltar", "GI", "GIB", "292", u"Gibraltar"),
-    Country(u"Greece", "GR", "GRC", "300", u"Greece"),
+    # Country(u"Greece", "GR", "GRC", "300", u"Greece"), # GR -> EL (EUROSTAT CONFORMAL)
+    Country(u"Greece", "EL", "GRC", "300", u"Greece"),
     Country(u"Greenland", "GL", "GRL", "304", u"Greenland"),
     Country(u"Grenada", "GD", "GRD", "308", u"Grenada"),
     Country(u"Guadeloupe", "GP", "GLP", "312", u"Guadeloupe"),
@@ -124,7 +126,8 @@ _records = [
     Country(u"Haiti", "HT", "HTI", "332", u"Haiti"),
     Country(u"Heard Island and McDonald Islands", "HM", "HMD", "334",
             u"Heard Island and McDonald Islands"),
-    Country(u"Holy See", "VA", "VAT", "336", u"Holy See"),
+    # Country(u"Holy See", "VA", "VAT", "336", u"Holy See"),
+    Country(u"Holy See", "VA", "VCS", "336", u"Holy See"),
     Country(u"Honduras", "HN", "HND", "340", u"Honduras"),
     Country(u"Hong Kong", "HK", "HKG", "344", u"Hong Kong"),
     Country(u"Hungary", "HU", "HUN", "348", u"Hungary"),
@@ -289,8 +292,11 @@ _records = [
     Country(u"Ukraine", "UA", "UKR", "804", u"Ukraine"),
     Country(u"United Arab Emirates", "AE", "ARE", "784",
             u"United Arab Emirates"),
+    # Country(u"United Kingdom of Great Britain and Northern Ireland",
+    #         "GB", "GBR", "826",
+    #         u"United Kingdom of Great Britain and Northern Ireland"),
     Country(u"United Kingdom of Great Britain and Northern Ireland",
-            "GB", "GBR", "826",
+            "UK", "GBR", "826",
             u"United Kingdom of Great Britain and Northern Ireland"),
     Country(u"United States of America", "US", "USA", "840",
             u"United States of America"),
@@ -310,8 +316,9 @@ _records = [
     Country(u"Western Sahara", "EH", "ESH", "732", u"Western Sahara"),
     Country(u"Yemen", "YE", "YEM", "887", u"Yemen"),
     Country(u"Zambia", "ZM", "ZMB", "894", u"Zambia"),
-    Country(u"Zimbabwe", "ZW", "ZWE", "716", u"Zimbabwe")]
-
+    Country(u"Zimbabwe", "ZW", "ZWE", "716", u"Zimbabwe"),
+    # NV additions
+    Country(u'Kosovo','XK','KOS','900',u'Kosovo')]
 
 def _build_index(idx):
     return dict((r[idx].upper(), r) for r in _records)
@@ -377,3 +384,4 @@ class _CountryLookup(object):
             return False
 
 countries = _CountryLookup()
+
