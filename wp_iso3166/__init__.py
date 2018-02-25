@@ -46,10 +46,12 @@ _records = [
     Country(u"Benin", "BJ", "BEN", "204", u"Benin"),
     Country(u"Bermuda", "BM", "BMU", "060", u"Bermuda"),
     Country(u"Bhutan", "BT", "BTN", "064", u"Bhutan"),
-    Country(u"Bolivia, Plurinational State of", "BO", "BOL", "068",
-            u"Bolivia, Plurinational State of"),
-    Country(u"Bonaire, Sint Eustatius and Saba", "BQ", "BES", "535",
-            u"Bonaire, Sint Eustatius and Saba"),
+    Country(u"Bolivia (Plurinational State of)", "BO", "BOL", "068",
+            u"Bolivia"),
+    # Country(u"Bolivia, Plurinational State of", "BO", "BOL", "068",
+    #         u"Bolivia, Plurinational State of"),
+    Country(u"Bonaire, Saint Eustatius and Saba", "BQ", "BES", "535",  # TODO report as bug to original lib
+            u"Bonaire, Saint Eustatius and Saba"),
     Country(u"Bosnia and Herzegovina", "BA", "BIH", "070",
             u"Bosnia and Herzegovina"),
     Country(u"Botswana", "BW", "BWA", "072", u"Botswana"),
@@ -65,21 +67,24 @@ _records = [
     Country(u"Cambodia", "KH", "KHM", "116", u"Cambodia"),
     Country(u"Cameroon", "CM", "CMR", "120", u"Cameroon"),
     Country(u"Canada", "CA", "CAN", "124", u"Canada"),
-    Country(u"Cabo Verde", "CV", "CPV", "132", u"Cabo Verde"),
+    Country(u"Cape Verde", "CV", "CPV", "132", u"Cape Verde"),  # WP synch: Cabo -> Cape
+    # Country(u"Cabo Verde", "CV", "CPV", "132", u"Cabo Verde"),
     Country(u"Cayman Islands", "KY", "CYM", "136", u"Cayman Islands"),
     Country(u"Central African Republic", "CF", "CAF", "140",
             u"Central African Republic"),
     Country(u"Chad", "TD", "TCD", "148", u"Chad"),
     Country(u"Chile", "CL", "CHL", "152", u"Chile"),
     Country(u"China", "CN", "CHN", "156", u"China"),
-    Country(u"Christmas Island", "CX", "CXR", "162", u"Christmas Island"),
-    Country(u"Cocos (Keeling) Islands", "CC", "CCK", "166",
-            u"Cocos (Keeling) Islands"),
+    # Country(u"Christmas Island", "CX", "CXR", "162", u"Christmas Island"), # No Christmas Island in WP
+    # Country(u"Cocos (Keeling) Islands", "CC", "CCK", "166",  # No Cocos Islands in WP
+    #         u"Cocos (Keeling) Islands"),
     Country(u"Colombia", "CO", "COL", "170", u"Colombia"),
     Country(u"Comoros", "KM", "COM", "174", u"Comoros"),
     Country(u"Congo", "CG", "COG", "178", u"Congo"),
-    Country(u"Congo, Democratic Republic of the", "CD", "COD", "180",
+    Country(u"Congo (Democratic Republic of the)", "CD", "COD", "180",
             u"Congo, Democratic Republic of the"),
+    # Country(u"Congo, Democratic Republic of the", "CD", "COD", "180",
+    # u"Congo, Democratic Republic of the"),
     Country(u"Cook Islands", "CK", "COK", "184", u"Cook Islands"),
     Country(u"Costa Rica", "CR", "CRI", "188", u"Costa Rica"),
     Country(u"Côte d'Ivoire", "CI", "CIV", "384", u"Côte d'Ivoire"),
@@ -87,7 +92,8 @@ _records = [
     Country(u"Cuba", "CU", "CUB", "192", u"Cuba"),
     Country(u"Curaçao", "CW", "CUW", "531", u"Curaçao"),
     Country(u"Cyprus", "CY", "CYP", "196", u"Cyprus"),
-    Country(u"Czechia", "CZ", "CZE", "203", u"Czechia"),
+    Country(u"Czech Republic", "CZ", "CZE", "203", u"Czech Republic"),
+    # Country(u"Czechia", "CZ", "CZE", "203", u"Czechia"), # TODO: what?
     Country(u"Denmark", "DK", "DNK", "208", u"Denmark"),
     Country(u"Djibouti", "DJ", "DJI", "262", u"Djibouti"),
     Country(u"Dominica", "DM", "DMA", "212", u"Dominica"),
@@ -137,8 +143,10 @@ _records = [
     Country(u"Iceland", "IS", "ISL", "352", u"Iceland"),
     Country(u"India", "IN", "IND", "356", u"India"),
     Country(u"Indonesia", "ID", "IDN", "360", u"Indonesia"),
-    Country(u"Iran, Islamic Republic of", "IR", "IRN", "364",
+    Country(u"Iran (Islamic Republic of)", "IR", "IRN", "364",
             u"Iran"),
+    # Country(u"Iran, Islamic Republic of", "IR", "IRN", "364",
+    #         u"Iran"),
     Country(u"Iraq", "IQ", "IRQ", "368", u"Iraq"),
     Country(u"Ireland", "IE", "IRL", "372", u"Ireland"),
     Country(u"Isle of Man", "IM", "IMN", "833", u"Isle of Man"),
@@ -151,13 +159,13 @@ _records = [
     Country(u"Kazakhstan", "KZ", "KAZ", "398", u"Kazakhstan"),
     Country(u"Kenya", "KE", "KEN", "404", u"Kenya"),
     Country(u"Kiribati", "KI", "KIR", "296", u"Kiribati"),
-    Country(u"Korea, Democratic People's Republic of", "KP", "PRK", "408",
+    Country(u"Korea (Democratic People's Republic of)", "KP", "PRK", "408",
             u"North Korea"),
-    Country(u"Korea, Republic of", "KR", "KOR", "410", u"South Korea"),
+    Country(u"Korea (Republic of)", "KR", "KOR", "410", u"South Korea"),
     Country(u"Kuwait", "KW", "KWT", "414", u"Kuwait"),
     Country(u"Kyrgyzstan", "KG", "KGZ", "417", u"Kyrgyzstan"),
     Country(u"Lao People's Democratic Republic", "LA", "LAO", "418",
-            u"Lao"),
+            u"Lao People's Democratic Republic"),
     Country(u"Latvia", "LV", "LVA", "428", u"Latvia"),
     Country(u"Lebanon", "LB", "LBN", "422", u"Lebanon"),
     Country(u"Lesotho", "LS", "LSO", "426", u"Lesotho"),
@@ -167,7 +175,7 @@ _records = [
     Country(u"Lithuania", "LT", "LTU", "440", u"Lithuania"),
     Country(u"Luxembourg", "LU", "LUX", "442", u"Luxembourg"),
     Country(u"Macao", "MO", "MAC", "446", u"Macao"),
-    Country(u"Macedonia, the former Yugoslav Republic of", "MK", "MKD", "807",
+    Country(u"Macedonia (the former Yugoslav Republic of)", "MK", "MKD", "807",
             u"Macedonia"),
     Country(u"Madagascar", "MG", "MDG", "450", u"Madagascar"),
     Country(u"Malawi", "MW", "MWI", "454", u"Malawi"),
@@ -181,9 +189,9 @@ _records = [
     Country(u"Mauritius", "MU", "MUS", "480", u"Mauritius"),
     Country(u"Mayotte", "YT", "MYT", "175", u"Mayotte"),
     Country(u"Mexico", "MX", "MEX", "484", u"Mexico"),
-    Country(u"Micronesia, Federated States of", "FM", "FSM", "583",
-            u"Micronesia, Federated States of"),
-    Country(u"Moldova, Republic of", "MD", "MDA", "498",
+    Country(u"Micronesia (Federated States of)", "FM", "FSM", "583",
+            u"Micronesia"),
+    Country(u"Moldova (Republic of)", "MD", "MDA", "498",
             u"Moldova"),
     Country(u"Monaco", "MC", "MCO", "492", u"Monaco"),
     Country(u"Mongolia", "MN", "MNG", "496", u"Mongolia"),
@@ -308,12 +316,12 @@ _records = [
     Country(u"Uruguay", "UY", "URY", "858", u"Uruguay"),
     Country(u"Uzbekistan", "UZ", "UZB", "860", u"Uzbekistan"),
     Country(u"Vanuatu", "VU", "VUT", "548", u"Vanuatu"),
-    Country(u"Venezuela, Bolivarian Republic of", "VE", "VEN", "862",
+    Country(u"Venezuela (Bolivarian Republic of)", "VE", "VEN", "862",
             u"Venezuela"),
     Country(u"Viet Nam", "VN", "VNM", "704", u"Viet Nam"),
-    Country(u"Virgin Islands, British", "VG", "VGB", "092",
+    Country(u"Virgin Islands (British)", "VG", "VGB", "092",
             u"(British) Virgin Islands"),
-    Country(u"Virgin Islands, U.S.", "VI", "VIR", "850",
+    Country(u"Virgin Islands (U.S.)", "VI", "VIR", "850",
             u"(US) Virgin Islands."),
     Country(u"Wallis and Futuna", "WF", "WLF", "876", u"Wallis and Futuna"),
     Country(u"Western Sahara", "EH", "ESH", "732", u"Western Sahara"),
@@ -321,7 +329,8 @@ _records = [
     Country(u"Zambia", "ZM", "ZMB", "894", u"Zambia"),
     Country(u"Zimbabwe", "ZW", "ZWE", "716", u"Zimbabwe"),
     # NV additions
-    Country(u'Kosovo', 'XK', 'KOS', '900', u'Kosovo')]
+    Country(u'Kosovo', 'XK', 'KOS', '900', u'Kosovo'),
+    Country(u'Spratly Islands', 'SP', 'SPR', '901', u'Spratly Islands')]
 
 
 def _build_index(idx):
@@ -347,7 +356,8 @@ NOT_FOUND = object()
 
 class _CountryLookup(object):
 
-    def get(self, key, default=NOT_FOUND):
+    @staticmethod
+    def get(key, default=NOT_FOUND):
         if isinstance(key, Integral):
             r = _by_numeric.get("%03d" % key, default)
         elif isinstance(key, basestring):
