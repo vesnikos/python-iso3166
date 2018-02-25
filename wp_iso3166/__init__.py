@@ -14,13 +14,16 @@ except NameError:
 Country = namedtuple('Country',
                      'name alpha2 alpha3 numeric apolitical_name')
 
+# A list of countries can be found here
+# https://docs.google.com/spreadsheets/d/1SMdcYQW_u23TLJfSXZzzWOcyxAFtp7wTanQv9y7fCFg
+
 _records = [
     Country(u"Afghanistan", "AF", "AFG", "004", u"Afghanistan"),
     Country(u"Åland Islands", "AX", "ALA", "248", u"Åland Islands"),
     Country(u"Albania", "AL", "ALB", "008", u"Albania"),
     Country(u"Algeria", "DZ", "DZA", "012", u"Algeria"),
     Country(u"American Samoa", "AS", "ASM", "016", u"American Samoa"),
-    # Country(u"Andorra", "AD", "AND", "020", u"Andorra"),
+    # Country(u"Andorra", "AD", "AND", "020", u"Andorra"),  # replaced AND -> ANR
     Country(u"Andorra", "AD", "ANR", "020", u"Andorra"),
     Country(u"Angola", "AO", "AGO", "024", u"Angola"),
     Country(u"Anguilla", "AI", "AIA", "660", u"Anguilla"),
@@ -135,7 +138,7 @@ _records = [
     Country(u"India", "IN", "IND", "356", u"India"),
     Country(u"Indonesia", "ID", "IDN", "360", u"Indonesia"),
     Country(u"Iran, Islamic Republic of", "IR", "IRN", "364",
-            u"Iran, Islamic Republic of"),
+            u"Iran"),
     Country(u"Iraq", "IQ", "IRQ", "368", u"Iraq"),
     Country(u"Ireland", "IE", "IRL", "372", u"Ireland"),
     Country(u"Isle of Man", "IM", "IMN", "833", u"Isle of Man"),
@@ -149,12 +152,12 @@ _records = [
     Country(u"Kenya", "KE", "KEN", "404", u"Kenya"),
     Country(u"Kiribati", "KI", "KIR", "296", u"Kiribati"),
     Country(u"Korea, Democratic People's Republic of", "KP", "PRK", "408",
-            u"Korea, Democratic People's Republic of"),
-    Country(u"Korea, Republic of", "KR", "KOR", "410", u"Korea, Republic of"),
+            u"North Korea"),
+    Country(u"Korea, Republic of", "KR", "KOR", "410", u"South Korea"),
     Country(u"Kuwait", "KW", "KWT", "414", u"Kuwait"),
     Country(u"Kyrgyzstan", "KG", "KGZ", "417", u"Kyrgyzstan"),
     Country(u"Lao People's Democratic Republic", "LA", "LAO", "418",
-            u"Lao People's Democratic Republic"),
+            u"Lao"),
     Country(u"Latvia", "LV", "LVA", "428", u"Latvia"),
     Country(u"Lebanon", "LB", "LBN", "422", u"Lebanon"),
     Country(u"Lesotho", "LS", "LSO", "426", u"Lesotho"),
@@ -165,7 +168,7 @@ _records = [
     Country(u"Luxembourg", "LU", "LUX", "442", u"Luxembourg"),
     Country(u"Macao", "MO", "MAC", "446", u"Macao"),
     Country(u"Macedonia, the former Yugoslav Republic of", "MK", "MKD", "807",
-            u"Macedonia, the former Yugoslav Republic of"),
+            u"Macedonia"),
     Country(u"Madagascar", "MG", "MDG", "450", u"Madagascar"),
     Country(u"Malawi", "MW", "MWI", "454", u"Malawi"),
     Country(u"Malaysia", "MY", "MYS", "458", u"Malaysia"),
@@ -181,7 +184,7 @@ _records = [
     Country(u"Micronesia, Federated States of", "FM", "FSM", "583",
             u"Micronesia, Federated States of"),
     Country(u"Moldova, Republic of", "MD", "MDA", "498",
-            u"Moldova, Republic of"),
+            u"Moldova"),
     Country(u"Monaco", "MC", "MCO", "492", u"Monaco"),
     Country(u"Mongolia", "MN", "MNG", "496", u"Mongolia"),
     Country(u"Montenegro", "ME", "MNE", "499", u"Montenegro"),
@@ -257,7 +260,7 @@ _records = [
     Country(u"South Africa", "ZA", "ZAF", "710", u"South Africa"),
     Country(u"South Georgia and the South Sandwich Islands",
             "GS", "SGS", "239",
-            u"South Georgia and the South Sandwich Islands",),
+            u"South Georgia and the South Sandwich Islands", ),
     Country(u"South Sudan", "SS", "SSD", "728", u"South Sudan"),
     Country(u"Spain", "ES", "ESP", "724", u"Spain"),
     Country(u"Sri Lanka", "LK", "LKA", "144", u"Sri Lanka"),
@@ -274,7 +277,7 @@ _records = [
             u"Taiwan"),
     Country(u"Tajikistan", "TJ", "TJK", "762", u"Tajikistan"),
     Country(u"Tanzania, United Republic of", "TZ", "TZA", "834",
-            u"Tanzania, United Republic of"),
+            u"Tanzania"),
     Country(u"Thailand", "TH", "THA", "764", u"Thailand"),
     Country(u"Timor-Leste", "TL", "TLS", "626", u"Timor-Leste"),
     Country(u"Togo", "TG", "TGO", "768", u"Togo"),
@@ -297,28 +300,29 @@ _records = [
     #         u"United Kingdom of Great Britain and Northern Ireland"),
     Country(u"United Kingdom of Great Britain and Northern Ireland",
             "UK", "GBR", "826",
-            u"United Kingdom of Great Britain and Northern Ireland"),
+            u"United Kingdom"),
     Country(u"United States of America", "US", "USA", "840",
-            u"United States of America"),
+            u"United States"),
     Country(u"United States Minor Outlying Islands", "UM", "UMI", "581",
             u"United States Minor Outlying Islands"),
     Country(u"Uruguay", "UY", "URY", "858", u"Uruguay"),
     Country(u"Uzbekistan", "UZ", "UZB", "860", u"Uzbekistan"),
     Country(u"Vanuatu", "VU", "VUT", "548", u"Vanuatu"),
     Country(u"Venezuela, Bolivarian Republic of", "VE", "VEN", "862",
-            u"Venezuela, Bolivarian Republic of"),
+            u"Venezuela"),
     Country(u"Viet Nam", "VN", "VNM", "704", u"Viet Nam"),
     Country(u"Virgin Islands, British", "VG", "VGB", "092",
-            u"Virgin Islands, British"),
+            u"(British) Virgin Islands"),
     Country(u"Virgin Islands, U.S.", "VI", "VIR", "850",
-            u"Virgin Islands, U.S."),
+            u"(US) Virgin Islands."),
     Country(u"Wallis and Futuna", "WF", "WLF", "876", u"Wallis and Futuna"),
     Country(u"Western Sahara", "EH", "ESH", "732", u"Western Sahara"),
     Country(u"Yemen", "YE", "YEM", "887", u"Yemen"),
     Country(u"Zambia", "ZM", "ZMB", "894", u"Zambia"),
     Country(u"Zimbabwe", "ZW", "ZWE", "716", u"Zimbabwe"),
     # NV additions
-    Country(u'Kosovo','XK','KOS','900',u'Kosovo')]
+    Country(u'Kosovo', 'XK', 'KOS', '900', u'Kosovo')]
+
 
 def _build_index(idx):
     return dict((r[idx].upper(), r) for r in _records)
@@ -331,14 +335,12 @@ _by_numeric = _build_index(3)
 _by_name = _build_index(0)
 _by_apolitical_name = _build_index(4)
 
-
 # Documented accessors for the country indexes
 countries_by_alpha2 = _by_alpha2
 countries_by_alpha3 = _by_alpha3
 countries_by_numeric = _by_numeric
 countries_by_name = _by_name
 countries_by_apolitical_name = _by_apolitical_name
-
 
 NOT_FOUND = object()
 
@@ -383,5 +385,5 @@ class _CountryLookup(object):
         except KeyError:
             return False
 
-countries = _CountryLookup()
 
+countries = _CountryLookup()
