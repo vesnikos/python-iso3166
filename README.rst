@@ -1,4 +1,14 @@
 ============================================================
+ python- wp_iso3166 - WorldPop ISO 3166-1 country definitions
+============================================================
+
+This is a modification of the project described below for my personal needs in the WorldPop project
+
+:Authors:
+        Nikos Ves
+:Version: 0.1
+
+============================================================
  python-iso3166 - Standalone ISO 3166-1 country definitions
 ============================================================
 

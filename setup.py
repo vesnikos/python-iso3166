@@ -12,13 +12,13 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 
-setup(name='iso3166',
-      version="0.8",
-      author="Mike Spindel",
-      author_email="mike@spindel.is",
+setup(name='wp_iso3166',
+      version="0.1",
+      author="original author, Mike Spindel",
+      author_email="-",
       license="MIT",
-      keywords="iso 3166-1 country codes",
-      url="http://github.com/deactivated/python-iso3166",
+      keywords="iso 3166-1 country codes WorldPop",
+      url="https://github.com/vesnikos/wp_iso3166",
       description='Self-contained ISO 3166-1 country definitions.',
       packages=find_packages(exclude=['ez_setup']),
       long_description=read('README.rst'),
